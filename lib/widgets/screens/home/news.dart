@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobi_med/widgets/screens/news/item_news.dart';
+
+import '../news/item_news.dart';
 
 class News extends StatelessWidget {
   const News({super.key});

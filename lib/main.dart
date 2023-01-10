@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:mobi_med/config/app_theme.dart';
-import 'package:mobi_med/router/Routes.dart';
-import 'package:mobi_med/router/Screen.dart';
+
+import 'config/app_theme.dart';
+import 'router/Routes.dart';
+import 'router/Screen.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();

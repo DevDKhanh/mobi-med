@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobi_med/widgets/screens/services/item_service.dart';
+
+import '../services/item_service.dart';
 
 class ListService extends StatelessWidget {
   const ListService({super.key});

@@ -1,7 +1,8 @@
 import 'package:avatar_view/avatar_view.dart';
 import 'package:flutter/material.dart';
-import 'package:mobi_med/config/app_color.dart';
-import 'package:mobi_med/config/app_text_style.dart';
+
+import '../../../config/app_color.dart';
+import '../../../config/app_text_style.dart';
 
 class HeaderHome extends StatefulWidget {
   const HeaderHome({super.key});

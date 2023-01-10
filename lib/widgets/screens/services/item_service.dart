@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mobi_med/config/app_color.dart';
-import 'package:mobi_med/config/app_constants.dart';
-import 'package:mobi_med/config/app_svg.dart';
-import 'package:mobi_med/config/app_text_style.dart';
 import 'package:mobi_med/widgets/screens/services/tag_service.dart';
+
+import '../../../config/app_color.dart';
+import '../../../config/app_constants.dart';
+import '../../../config/app_svg.dart';
+import '../../../config/app_text_style.dart';
 
 class ItemSevice extends StatelessWidget {
   const ItemSevice({super.key});

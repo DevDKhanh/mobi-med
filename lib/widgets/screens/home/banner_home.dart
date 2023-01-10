@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobi_med/config/app_color.dart';
-import 'package:mobi_med/config/app_constants.dart';
+
+import '../../../config/app_color.dart';
+import '../../../config/app_constants.dart';
 
 class BannerHome extends StatelessWidget {
   const BannerHome({super.key});

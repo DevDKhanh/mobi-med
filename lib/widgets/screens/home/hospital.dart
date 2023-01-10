@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobi_med/widgets/screens/hospital/item_hospital.dart';
+
+import '../hospital/item_hospital.dart';
 
 class Hospital extends StatelessWidget {
   const Hospital({super.key});
