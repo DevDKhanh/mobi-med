@@ -93,7 +93,7 @@ class _ButtonAddCalendarState extends State<ButtonAddCalendar> {
       padding: const EdgeInsets.all(6.0),
       child: SpeedDial(
         elevation: 8,
-        spaceBetweenChildren: 12,
+        spaceBetweenChildren: 4,
         backgroundColor: AppColor.primary,
         activeBackgroundColor: Colors.white,
         childrenButtonSize: Size(AppConst.fullWidth(context) * 0.9, 72),
