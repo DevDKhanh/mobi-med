@@ -12,4 +12,17 @@ class AppSVG {
   static String notification = 'assets/images/notification.svg';
   static String userOctagonActive = 'assets/images/user_octagon_active.svg';
   static String userOctagon = 'assets/images/user_octagon.svg';
+  static String profile = 'assets/images/profile.svg';
+  static String wallet = 'assets/images/wallet.svg';
+  static String family = 'assets/images/family.svg';
+  static String bill = 'assets/images/bill.svg';
+  static String hospitalPlus = 'assets/images/hospital_plus.svg';
+  static String doctor = 'assets/images/doctor.svg';
+  static String arrowRight = 'assets/images/arrow_right.svg';
+  static String settings = 'assets/images/settings.svg';
+  static String sms = 'assets/images/sms.svg';
+  static String docs = 'assets/images/docs.svg';
+  static String about = 'assets/images/about.svg';
+  static String share = 'assets/images/share.svg';
+  static String logout = 'assets/images/logout.svg';
 }

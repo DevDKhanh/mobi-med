@@ -5,4 +5,5 @@ class Routes {
   static String loginPage = 'LoginPage';
   static String signupPage = 'SignupPage';
   static String forgotPassword = 'ForgotPasswordScreen';
+  static String profileMenu = 'ProfileMenu';
 }

@@ -34,6 +34,16 @@ class AppTextStyle {
     wordSpacing: 0.2,
     letterSpacing: 0.1,
   );
+  static const z12 = TextStyle(
+    fontSize: 12,
+    wordSpacing: 0.2,
+    letterSpacing: 0.1,
+  );
+  static const z13 = TextStyle(
+    fontSize: 13,
+    wordSpacing: 0.2,
+    letterSpacing: 0.1,
+  );
   static const z16 = TextStyle(
     fontSize: 16,
     wordSpacing: 0.2,

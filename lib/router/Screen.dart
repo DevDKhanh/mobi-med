@@ -1,9 +1,10 @@
-import 'package:mobi_med/router/Routes.dart';
-import 'package:mobi_med/screens/forgot_password.dart';
-import 'package:mobi_med/screens/home_screen.dart';
-import 'package:mobi_med/screens/login_screen.dart';
-import 'package:mobi_med/screens/onboarding_screen.dart';
-import 'package:mobi_med/screens/signup_screen.dart';
+import '../screens/forgot_password.dart';
+import '../screens/home_screen.dart';
+import '../screens/login_screen.dart';
+import '../screens/onboarding_screen.dart';
+import '../screens/profile_menu.dart';
+import '../screens/signup_screen.dart';
+import 'Routes.dart';
 
 class Screen {
   static list(context) {
@@ -13,6 +14,7 @@ class Screen {
       Routes.signupPage: (context) => const SignupScreen(),
       Routes.onboardingScreen: (context) => const OnboardingScreen(),
       Routes.forgotPassword: (context) => const ForgotPasswordScreen(),
+      Routes.profileMenu: (context) => const ProfileMenuScreen(),
     };
   }
 }

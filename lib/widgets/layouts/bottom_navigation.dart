@@ -4,6 +4,8 @@ import 'package:mobi_med/config/app_color.dart';
 import 'package:mobi_med/config/app_svg.dart';
 import 'package:mobi_med/config/app_text_style.dart';
 import 'package:mobi_med/router/Routes.dart';
+import 'package:mobi_med/screens/home_screen.dart';
+import 'package:mobi_med/screens/profile_menu.dart';
 
 class BottomNavigationBase extends StatefulWidget {
   final String? nameRoute;
@@ -21,12 +23,14 @@ class _BottomNavigationBaseState extends State<BottomNavigationBase> {
   final List<Map<String, dynamic>> _pages = [
     {
       'page': Routes.homePage,
+      'screen': const HomeScreen(),
       'icon': AppSVG.iconHome,
       'icon_active': AppSVG.iconHomeActive,
       'tile': 'Trang chủ',
     },
     {
       'page': Routes.loginPage,
+      'screen': const HomeScreen(),
       'icon': AppSVG.calendarTick,
       'icon_active': AppSVG.calendarTickActive,
       'tile': 'Lịch khám',
@@ -37,12 +41,14 @@ class _BottomNavigationBaseState extends State<BottomNavigationBase> {
     },
     {
       'page': Routes.loginPage,
+      'screen': const HomeScreen(),
       'icon': AppSVG.notification,
       'icon_active': AppSVG.notificationActive,
       'tile': 'Thông báo',
     },
     {
-      'page': Routes.loginPage,
+      'page': Routes.profileMenu,
+      'screen': const ProfileMenuScreen(),
       'icon': AppSVG.userOctagon,
       'icon_active': AppSVG.userOctagonActive,
       'tile': 'Cá nhân',
@@ -62,12 +68,16 @@ class _BottomNavigationBaseState extends State<BottomNavigationBase> {
         children: _pages.map((page) {
           return GestureDetector(
             onTap: () {
-              if (page['page'] != null) {
-                Navigator.pushNamed(context, page['page']);
+              if (page['page'] != null && page['screen'] != null) {
+                Navigator.of(context).push(PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) =>
+                      page['screen'],
+                ));
               }
             },
             child: Container(
               padding: const EdgeInsets.only(top: 10),
+              color: AppColor.light,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

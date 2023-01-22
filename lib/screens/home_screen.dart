@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:mobi_med/config/app_color.dart';
 import 'package:mobi_med/config/app_constants.dart';
-import 'package:mobi_med/config/app_svg.dart';
 import 'package:mobi_med/router/Routes.dart';
 import 'package:mobi_med/widgets/layouts/bottom_navigation.dart';
 import 'package:mobi_med/widgets/layouts/button_navigation_calendar.dart';

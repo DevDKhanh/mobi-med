@@ -5,11 +5,13 @@ class Button extends StatefulWidget {
   final Text text;
   final GestureTapCallback onPressed;
   final Color backgroundColor;
+  final double height;
 
   const Button({
     super.key,
     required this.text,
     required this.onPressed,
+    this.height = 48,
     this.backgroundColor = AppColor.primary,
   });
 
@@ -27,7 +29,7 @@ class _ButtonState extends State<Button> {
           widget.onPressed();
         },
         style: ElevatedButton.styleFrom(
-          minimumSize: const Size.fromHeight(48),
+          minimumSize: Size.fromHeight(widget.height),
           backgroundColor: widget.backgroundColor,
         ),
         child: widget.text,
